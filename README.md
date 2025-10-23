@@ -1,23 +1,30 @@
-[user]: mahankals
-[repo]: Package-Template
-[title]: [repo]
-[name]: package-teplate
+<!--
+/** replace bellow details */
+{git-user}
+{git-repo}
+{git-branch}
+{Package-Title}
+{auther}
+{author-site}
+{email}
+-->
 
-# Package-Template
+# {Package-Title}
 
-[![Latest Version](https://img.shields.io/github/v/tag/mahankals/Package-Template?label=Latest)](https://github.com/mahankals/Package-Template)
-[![Stable Version](https://img.shields.io/github/v/release/mahankals/Package-Template?label=Stable&sort=semver)](https://github.com/mahankals/Package-Template/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Total Downloads](https://img.shields.io/github/downloads/mahankals/Package-Template/total.svg)](https://github.com/mahankals/Package-Template/releases)
+[![Latest Version](https://img.shields.io/github/v/tag/{git-user}/{git-repo}?label=Git%20Latest)](https://github.com/{git-user}/{git-repo})
+[![Stable Version](https://img.shields.io/github/v/release/{git-user}/{git-repo}?label=Git%20Stable&sort=semver)](https://github.com/{git-user}/{git-repo}/releases)
+[![Total Downloads](https://img.shields.io/github/downloads/{git-user}/{git-repo}/total?label=Git%20Downloads)](https://github.com/{git-user}/{git-repo}/releases)
 
-[![GitHub Stars](https://img.shields.io/github/stars/mahankals/Package-Template?style=social)](https://github.com/mahankals/Package-Template/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/mahankals/Package-Template?style=social)](https://github.com/mahankals/Package-Template/network/members)
-[![GitHub Watchers](https://img.shields.io/github/watchers/mahankals/Package-Template?style=social)](https://github.com/mahankals/Package-Template/watchers)
+[![GitHub Stars](https://img.shields.io/github/stars/{git-user}/{git-repo}?style=social)](https://github.com/{git-user}/{git-repo}/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/{git-user}/{git-repo}?style=social)](https://github.com/{git-user}/{git-repo}/network/members)
+[![GitHub Watchers](https://img.shields.io/github/watchers/{git-user}/{git-repo}?style=social)](https://github.com/{git-user}/{git-repo}/watchers)
 
 
-<!-- [![Latest Stable Version](https://poser.pugx.org/mahankals/Package-Template/v/stable)](https://packagist.org/packages/mahankals/Package-Template)
-[![Total Downloads](https://poser.pugx.org/mahankals/Package-Template/downloads)](https://packagist.org/packages/mahankals/Package-Template)
- -->
+<!-- packagist details
+[![Latest Stable Version](https://poser.pugx.org/{git-user}/{git-repo}/v/stable)](https://packagist.org/packages/{git-user}/{git-repo})
+[![Total Downloads](https://poser.pugx.org/{git-user}/{git-repo}/downloads)](https://packagist.org/packages/{git-user}/{git-repo})
+-->
 
 Package description
 
@@ -25,41 +32,54 @@ Package description
 
 ## Features
 
-- 
+- feature 1
 
 ## Installation
 
 You can install this plugin directly from GitHub using Composer:
 
-### 1. Add the GitHub repository to your app's `composer.json`:
+1. Add the GitHub repository to your app's `composer.json`:
 
-```json
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/mahankals/Package-Template"
-    }
-]
-```
+   ```json
+   "repositories": [
+       {
+           "type": "vcs",
+           "url": "https://github.com/{git-user}/{git-repo}"
+       }
+   ]
+   ```
 
-### 2. Require the plugin via Composer:
+1. Require the plugin via Composer:
 
-```bash
-composer require mahankals/Package-Template:dev-main
-bin/cake plugin load Package-Template
-```
+   ```bash
+   composer require mahankals/{git-repo}:dev-{git-branch}
+   ```
 
-## Load the plugin
+1. Load the plugin
 
-### Method 1: from terminal
+   **Method 1: from terminal**
 
-```bash
-bin/cake plugin load Package-Template
-```
+   ```bash
+   bin/cake plugin load {Package-Title}
+   ```
 
-### Method 2: load in `Application.php`, bootstrap method
+   **Method 2: load in `Application.php`, bootstrap method**
 
-```bash
-$this->addPlugin('Package-Template');
-```
+   ```bash
+   $this->addPlugin('{Package-Title}');
+   ```
 
+## Other Details
+
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## Author
+
+[{author}]({author-site})
+
+## License
+
+This library is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
